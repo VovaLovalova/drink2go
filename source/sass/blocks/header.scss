@@ -1,0 +1,30 @@
+@media (max-width: $mobile-width) {
+
+  .header__logo-text {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .header__logo-image {
+    width: 82px;
+    height: 36px;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .header__logo-image {
+    width: 170px;
+    height: 36px;
+  }
+
+  .header__logo-text {
+    display: block;
+  }
+}
