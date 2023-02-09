@@ -1,0 +1,19 @@
+.contacts {
+  border-bottom: 1px solid #F0EBFF;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #7859CF;
+}
+
+.contacts__address, .contacts__phone {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}

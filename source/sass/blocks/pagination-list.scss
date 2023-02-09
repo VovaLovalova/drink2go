@@ -1,0 +1,31 @@
+.pagination-list {
+  display: flex;
+}
+
+.pagination-list__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.pagination-list__button {
+  width: 40px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #7859CF;
+  cursor: pointer;
+}
+
+.pagination-list__button--current {
+  background-color: #F8F8F8;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  cursor: auto;
+}

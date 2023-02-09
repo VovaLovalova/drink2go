@@ -1,0 +1,15 @@
+.social {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F0EBFF;
+}
+
+.social__list {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .social__logo-image {
+    width: 170px;
+  }
+}

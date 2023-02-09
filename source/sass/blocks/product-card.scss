@@ -13,3 +13,36 @@
   margin-bottom: 20px;
 }
 
+.product-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.product-card__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.product-card__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+.product-card__button {
+  width: 141px;
+  height: 36px;
+  background-color: #7859CF;
+  border: none;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
