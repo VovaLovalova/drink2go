@@ -29,6 +29,16 @@
   margin-bottom: 102px;
 }
 
+.advantages__item {
+  position: relative;
+}
+
+.advantages__item-image {
+  position: absolute;
+  top: -66px;
+  left: 118px;
+}
+
 .advantages__item-title {
   font-weight: 700;
   font-size: 18px;

@@ -7,6 +7,7 @@
 }
 
 .pagination-list__button {
+  font-family: "Montserrat", "Arial", sans-serif;
   width: 40px;
   height: 40px;
   background-color: #FFFFFF;
@@ -28,4 +29,8 @@
   text-align: center;
   color: #333333;
   cursor: auto;
+}
+
+.pagination-list__button-image--next {
+  transform: rotate(180deg);
 }

@@ -16,7 +16,8 @@
   margin-bottom: 16px;
 }
 
-.contacts__address, .contacts__phone {
+.contacts__address-text,
+.contacts__phone-text {
   display: block;
   margin-left: 19px;
   font-style: normal;
@@ -24,4 +25,16 @@
   font-size: 14px;
   line-height: 20px;
   color: #333333;
+}
+
+.contacts__address,
+.contacts__phone {
+  position: relative;
+}
+
+.contacts__address-image,
+.contacts__phone-image {
+  position: absolute;
+  top: 3px;
+  left: 0;
 }
