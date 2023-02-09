@@ -1,11 +1,29 @@
 .social {
+  height: 80px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #F0EBFF;
+  padding: 22px 20px;
+}
+
+.social__logo {
+  margin-right: 47px;
 }
 
 .social__list {
+  width: 140px;
   display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: aquamarine;
 }
 
 @media (min-width: $tablet-width) {

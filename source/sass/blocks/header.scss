@@ -2,7 +2,12 @@
   width: 320px;
   height: 60px;
   display: flex;
-  padding: 12px 20px;
+  align-items: center;
+  padding: 12px 0 12px 20px;
+}
+
+.header__logo-wrapper {
+  margin-right: 68px;
 }
 
 @media (max-width: $mobile-width) {

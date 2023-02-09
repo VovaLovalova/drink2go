@@ -1,6 +1,17 @@
+.filter {
+  margin-bottom: 20px;
+}
+
 .filter__price-title,
 .filter__milk-title,
-.filter__country-title,
+.filter__country-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
 .filter__sorting-title {
   font-weight: 600;
   font-size: 16px;
@@ -45,6 +56,7 @@
 .filter__buttons-apply {
   background: #7859CF;
   color: #FFFFFF;
+  margin-bottom: 25px;
 }
 
 .filter__buttons-reset {
@@ -56,11 +68,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .filter__sorting {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .filter__sorting-select {
@@ -71,4 +85,24 @@
   color: #7859CF;
   border: none;
   background: #F8F8F8;
+}
+
+.filter__price {
+  margin-bottom: 24px;
+}
+
+.filter__milk {
+  margin-bottom: 22px;
+}
+
+.filter__country {
+  margin-bottom: 34px;
+}
+
+.filter__milk-item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.filter__country-item:not(:last-child) {
+  margin-bottom: 20px;
 }

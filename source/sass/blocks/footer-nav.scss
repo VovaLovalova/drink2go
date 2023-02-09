@@ -6,6 +6,8 @@
 
 .footer-nav__site,
 .footer-nav__media {
+  width: 320px;
+  padding: 20px 20px 28px;
   border-bottom: 1px solid #F0EBFF;
 }
 
@@ -19,6 +21,11 @@
   line-height: 20px;
   letter-spacing: 0.02em;
   color: #7859CF;
+  margin-bottom: 20px;
+}
+
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .footer-nav__link {

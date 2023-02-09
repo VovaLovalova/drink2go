@@ -1,3 +1,14 @@
 .user-list {
   display: flex;
 }
+
+.user-list__link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: aqua;
+}
+
+.user-list__link-text {
+  display: none;
+}

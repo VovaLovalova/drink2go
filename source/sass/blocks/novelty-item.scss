@@ -1,3 +1,16 @@
+.novelty-item {
+  width: 320px;
+  height: 656px;
+  padding: 310px 20px 20px;
+  position: relative;
+}
+
+.novelty-item__link-image {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 .novelty-item__caption {
   font-weight: 700;
   font-size: 12px;
@@ -6,6 +19,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #7859CF;
+  margin-bottom: 4px;
 }
 
 .novelty-item__title {
@@ -15,6 +29,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #333333;
+  margin-bottom: 10px;
 }
 
 .novelty-item__description {
@@ -23,6 +38,13 @@
   line-height: 20px;
   text-align: center;
   color: #333333;
+  margin-bottom: 20px;
+}
+
+.novelty-item__order {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .novelty-item__old-price {
@@ -31,9 +53,10 @@
   line-height: 32px;
   text-decoration-line: line-through;
   color: #7859CF;
+  margin-right: 6px;
 }
 
-.novelty-item__price {
+.novelty-item__new-price {
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;

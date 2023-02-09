@@ -1,5 +1,17 @@
 .catalog {
   background: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog__products-list {
+  margin-bottom: 40px;
+}
+
+.catalog__wrapper {
+  width: 320px;
+  padding: 50px 20px 40px;
 }
 
 .catalog__title {
@@ -10,6 +22,7 @@
   text-transform: uppercase;
   text-align: center;
   color: #7859CF;
+  margin-bottom: 4px;
 }
 
 .catalog__description {
@@ -18,4 +31,5 @@
   line-height: 36px;
   text-align: center;
   color: #333333;
+  margin-bottom: 20px;
 }
