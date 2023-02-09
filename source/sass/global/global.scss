@@ -1,6 +1,10 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 
-body { margin: 0 }
+body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  margin: 0;
+}
+
 img { max-width: 100% }
 a { text-decoration: none }
 ul { list-style: none }
@@ -17,4 +21,8 @@ ul { list-style: none }
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.hidden {
+  display: none;
 }

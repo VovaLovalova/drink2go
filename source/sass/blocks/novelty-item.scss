@@ -1,0 +1,55 @@
+.novelty-item__caption {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7859CF;
+}
+
+.novelty-item__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.novelty-item__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+
+.novelty-item__old-price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration-line: line-through;
+  color: #7859CF;
+}
+
+.novelty-item__price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333
+}
+
+.novelty-item__button {
+  width: 113px;
+  height: 40px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #7859CF;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
