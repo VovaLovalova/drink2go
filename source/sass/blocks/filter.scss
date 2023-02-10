@@ -27,18 +27,46 @@
   color: #333333;
 }
 
+.filter__milk-input:disabled + .filter__milk-label {
+  color: #BDBDBD;
+}
+
+.filter__country-input:disabled + .filter__country-label {
+  color: #BDBDBD;
+}
+
 .filter__price-value {
-  width: 118px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  width: 115px;
   height: 38px;
   border-radius: 4px;
   padding: 8px 10px;
   text-align: center;
   background: #FFFFFF;
   border: 2px solid #9070EC;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #333333;
+}
+
+.filter__price-value--start {
+  margin-right: 44px;
+  position: relative;
+}
+
+.filter__price {
+  position: relative;
+}
+
+.filter__price::after {
+  content: "";
+  position: absolute;
+  top: 114px;
+  left: 134px;
+  width: 9px;
+  height: 2px;
+  background-color: #BDBDBD;
 }
 
 .filter__buttons-apply,
@@ -106,4 +134,90 @@
 
 .filter__country-item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+// Кастомизируем инпуты-радиокнопки
+
+.filter__milk-input {
+  display: none;
+}
+
+.filter__milk-label {
+  margin-left: 34px;
+  position: relative;
+}
+
+.filter__milk-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -34px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #BDBDBD;
+  background-color: #ffffff;
+}
+
+.filter__milk-input:checked + .filter__milk-label::before {
+  border: 2px solid #7859CF;
+}
+
+.filter__milk-input:checked + .filter__milk-label::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #7859CF;
+}
+
+// Кастомизируем инпуты-чекбоксы
+
+.filter__country-input {
+  display: none;
+}
+
+.filter__country-label {
+  margin-left: 54px;
+  position: relative;
+}
+
+.filter__country-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -54px;
+  width: 42px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: #BDBDBD;
+}
+
+.filter__country-label::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -52px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.filter__country-input:checked + .filter__country-label::before {
+  background-color: #7859CF;
+}
+
+.filter__country-input:checked + .filter__country-label::after {
+  left: -34px;
+}
+
+// Кастомизируем слайдер
+.filter__price-slider {
+  width: 280px;
+  height: 24px;
+  margin-bottom: 26px;
 }

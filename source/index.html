@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font">
@@ -13,6 +12,9 @@
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body">
@@ -163,100 +165,110 @@
     <section class="main__item novelty">
       <div class="novelty__wrapper">
         <h2 class="visually-hidden">Список новинок магазина</h2>
-        <ul class="novelty__list novelty-list">
-
-          <li class="novelty-list__item novelty-item">
-            <p class="novelty-item__caption">Новинка!</p>
-            <a class="novelty-item__link-title" href="#">
-              <h3 class="novelty-item__title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="novelty-item__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-              молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-            <a class="novelty-item__link-image" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/slider/decaf-desktop.webp 1x, img/slider/decaf-desktop@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/slider/decaf-desktop.png 1x,
-                    img/slider/decaf-desktop@2x.png 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/decaf-tablet.webp 1x, img/slider/decaf-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/slider/decaf-tablet.png 1x,
-                    img/slider/decaf-tablet@2x.png 2x">
-                <source type="image/webp" srcset="img/slider/decaf-mobile.webp 1x, img/slider/decaf-mobile@2x.webp 2x">
-                <img class="novelty-item__image" src="img/slider/decaf-mobile.png"
-                  srcset="img/slider/decaf-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
-              </picture>
-            </a>
-            <div class="novelty-item__order">
-              <div class="novelty-item__price">
-                <span class="novelty-item__old-price">295₽</span>
-                <span class="novelty-item__new-price">225₽</span>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="novelty__item novelty-item">
+                <p class="novelty-item__caption">Новинка!</p>
+                <a class="novelty-item__link-title" href="#">
+                  <h3 class="novelty-item__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="novelty-item__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
+                  молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <a class="novelty-item__link-image" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/slider/decaf-desktop.webp 1x, img/slider/decaf-desktop@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/slider/decaf-desktop.png 1x,
+                img/slider/decaf-desktop@2x.png 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/slider/decaf-tablet.webp 1x, img/slider/decaf-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/slider/decaf-tablet.png 1x,
+                img/slider/decaf-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/slider/decaf-mobile.webp 1x, img/slider/decaf-mobile@2x.webp 2x">
+                    <img class="novelty-item__image" src="img/slider/decaf-mobile.png"
+                      srcset="img/slider/decaf-mobile@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
+                  </picture>
+                </a>
+                <div class="novelty-item__order">
+                  <div class="novelty-item__price">
+                    <span class="novelty-item__old-price">295₽</span>
+                    <span class="novelty-item__new-price">225₽</span>
+                  </div>
+                  <a class="novelty-item__button" href="#">Заказать</a>
+                </div>
               </div>
-              <a class="novelty-item__button" href="#">Заказать</a>
             </div>
-          </li>
-
-          <!-- <li class="novelty-list__item novelty-item">
-            <p class="novelty-item__caption">Новинка!</p>
-            <a class="novelty-item__link-text" href="#">
-              <h3 class="novelty-item__title">Лавандовый Латте</h3>
-            </a>
-            <p class="novelty-item__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
-              лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
-            <a class="novelty-item__link-image" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/slider/lavender-desktop.webp 1x, img/slider/lavender-desktop@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/slider/lavender-desktop.png 1x,
-                      img/slider/lavender-desktop@2x.png 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/lavender-tablet.webp 1x, img/slider/lavender-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/slider/lavender-tablet.png 1x,
-                      img/slider/lavender-tablet@2x.png 2x">
-                <source type="image/webp"
-                  srcset="img/slider/lavender-mobile.webp 1x, img/slider/lavender-mobile@2x.webp 2x">
-                <img class="novelty-item__image" src="img/slider/lavender-mobile.png"
-                  srcset="img/slider/lavender-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
-              </picture>
-            </a>
-            <div class="novelty-item__order">
-              <span class="novelty-item__old-price">285₽</span>
-              <span class="novelty-item__new-price">265₽</span>
-              <a class="novelty-item__button" href="#">Заказать</a>
+            <div class="swiper-slide">
+              <div class="novelty-list__item novelty-item">
+                <p class="novelty-item__caption">Новинка!</p>
+                <a class="novelty-item__link-text" href="#">
+                  <h3 class="novelty-item__title">Лавандовый Латте</h3>
+                </a>
+                <p class="novelty-item__description">Невероятное сочетание перуанской высокогорной арабики с молоком
+                  ламы и
+                  лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <a class="novelty-item__link-image" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/slider/lavender-desktop.webp 1x, img/slider/lavender-desktop@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/slider/lavender-desktop.png 1x,
+                  img/slider/lavender-desktop@2x.png 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/slider/lavender-tablet.webp 1x, img/slider/lavender-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/slider/lavender-tablet.png 1x,
+                  img/slider/lavender-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/slider/lavender-mobile.webp 1x, img/slider/lavender-mobile@2x.webp 2x">
+                    <img class="novelty-item__image" src="img/slider/lavender-mobile.png"
+                      srcset="img/slider/lavender-mobile@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
+                  </picture>
+                </a>
+                <div class="novelty-item__order">
+                  <span class="novelty-item__old-price">285₽</span>
+                  <span class="novelty-item__new-price">265₽</span>
+                  <a class="novelty-item__button" href="#">Заказать</a>
+                </div>
+              </div>
             </div>
-          </li>
-
-          <li class="novelty-list__item novelty-item">
-            <p class="novelty-item__caption">Новинка!</p>
-            <a class="novelty-item__link-text" href="#">
-              <h3 class="novelty-item__title">Тройной Эспрессо</h3>
-            </a>
-            <p class="novelty-item__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
-              эспрессо
-              из Колумбии покажет вам, что такое настоящая бодрость</p>
-            <a class="novelty-item__link-image" href="#">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
-                  srcset="img/slider/espresso-desktop.webp 1x, img/slider/espresso-desktop@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/slider/espresso-desktop.png 1x,
-                      img/slider/espresso-desktop@2x.png 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/slider/espresso-tablet.webp 1x, img/slider/espresso-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/slider/espresso-tablet.png 1x,
-                      img/slider/espresso-tablet@2x.png 2x">
-                <source type="image/webp"
-                  srcset="img/slider/espresso-mobile.webp 1x, img/slider/espresso-mobile@2x.webp 2x">
-                <img class="novelty-item__image" src="img/slider/espresso-mobile.png"
-                  srcset="img/slider/espresso-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
-              </picture>
-            </a>
-            <div class="novelty-item__order">
-              <span class="novelty-item__old-price">395₽</span>
-              <span class="novelty-item__new-price">375₽</span>
-              <a class="novelty-item__button" href="#">Заказать</a>
+            <div class="swiper-slide">
+              <div class="novelty-list__item novelty-item">
+                <p class="novelty-item__caption">Новинка!</p>
+                <a class="novelty-item__link-text" href="#">
+                  <h3 class="novelty-item__title">Тройной Эспрессо</h3>
+                </a>
+                <p class="novelty-item__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
+                  эспрессо
+                  из Колумбии покажет вам, что такое настоящая бодрость</p>
+                <a class="novelty-item__link-image" href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1440px)"
+                      srcset="img/slider/espresso-desktop.webp 1x, img/slider/espresso-desktop@2x.webp 2x">
+                    <source media="(min-width: 1440px)" srcset="img/slider/espresso-desktop.png 1x,
+                  img/slider/espresso-desktop@2x.png 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/slider/espresso-tablet.webp 1x, img/slider/espresso-tablet@2x.webp 2x">
+                    <source media="(min-width: 768px)" srcset="img/slider/espresso-tablet.png 1x,
+                  img/slider/espresso-tablet@2x.png 2x">
+                    <source type="image/webp"
+                      srcset="img/slider/espresso-mobile.webp 1x, img/slider/espresso-mobile@2x.webp 2x">
+                    <img class="novelty-item__image" src="img/slider/espresso-mobile.png"
+                      srcset="img/slider/espresso-mobile@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
+                  </picture>
+                </a>
+                <div class="novelty-item__order">
+                  <span class="novelty-item__old-price">395₽</span>
+                  <span class="novelty-item__new-price">375₽</span>
+                  <a class="novelty-item__button" href="#">Заказать</a>
+                </div>
+              </div>
             </div>
-          </li> -->
-        </ul>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     <section class="main__item advantages">
@@ -308,8 +320,8 @@
             <h3 class="filter__price-title">Цена</h3>
             <div class="filter__price-slider" id="slider"></div>
             <div class="filter__price-field">
-              <input class="filter__price-value" type="text" placeholder="0">
-              <input class="filter__price-value" type="text" value="900">
+              <input class="filter__price-value filter__price-value--start" type="text" placeholder="0">
+              <input class="filter__price-value filter__price-value--end" type="text" value="900">
             </div>
           </section>
 

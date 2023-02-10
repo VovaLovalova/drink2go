@@ -1,6 +1,19 @@
 /* в этот файл добавляет скрипты*/
+// ПРОМО БЛОК SwiperJs
 
-// КАРТА
+var swiper = new Swiper(".swiper", {
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  }
+});
+
+// КАРТА Leaflet
 
 const map = L.map('map').setView([59.96842348128831, 30.317638180568846], 17);
 

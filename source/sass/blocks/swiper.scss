@@ -1,0 +1,30 @@
+.swiper-pagination {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .swiper-pagination {
+    display: block;
+  }
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px;
+  color: #7859CF;
+}
+
+.swiper-pagination-bullet {
+  width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,62px));
+  height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,4px));
+  border-radius: 0;
+  background: var(--swiper-pagination-bullet-inactive-color,#fff);
+  opacity: var(--swiper-pagination-bullet-inactive-opacity, 1);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-bullet-inactive-color,#7859CF);
+}
+
+.swiper-pagination-bullet:hover {
+  background: var(--swiper-pagination-bullet-inactive-color,rgba(120, 89, 207, 0.25));
+}
