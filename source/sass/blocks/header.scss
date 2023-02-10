@@ -1,14 +1,16 @@
 .header {
   width: 320px;
-  height: 60px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 12px 0 12px 20px;
   position: relative;
 }
 
-.header__logo-wrapper {
-  margin-right: 68px;
+.header__wrapper {
+  width: 320px;
+  height: 60px;
+  padding: 12px 20px;
+  text-align: start;
 }
 
 @media (max-width: $mobile-width) {
@@ -39,4 +41,8 @@
   .header__logo-text {
     display: block;
   }
+}
+
+.header__link {
+  position: absolute;
 }

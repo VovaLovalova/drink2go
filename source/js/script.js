@@ -10,7 +10,8 @@ var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  }
+  },
+  mousewheel: true
 });
 
 // КАРТА Leaflet
@@ -40,3 +41,31 @@ const mainPinMarker = L.marker(
 );
 
 mainPinMarker.addTo(map);
+
+
+//МОБИЛЬНОЕ МЕНЮ
+
+let button = document.querySelector('.navigation__toggle');
+let navBar = document.querySelector('.navigation__list');
+
+button.classList.remove('navigation__toggle--nojs');
+navBar.classList.remove('navigation__list--nojs')
+
+function onClickNavBarButton() {
+  button.classList.toggle('navigation__toggle--open');
+  button.classList.toggle('navigation__toggle--close');
+  navBar.classList.toggle('navigation__list--open');
+  navBar.classList.toggle('navigation__list--close');
+}
+
+function onClickDocument(e) {
+  if (e.target != button) {
+    navBar.classList.add('navigation__list--close');
+    navBar.classList.remove('navigation__list--open');
+    button.classList.add('navigation__toggle--open');
+    button.classList.remove('navigation__toggle--close');
+  }
+}
+
+button.addEventListener("click", onClickNavBarButton);
+document.addEventListener("click", onClickDocument);

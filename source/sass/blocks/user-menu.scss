@@ -1,8 +1,11 @@
-.user-list {
+.user-menu {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 140px;
 }
 
-.user-list__link {
+.user-menu__link {
   display: block;
   width: 60px;
   height: 60px;
@@ -11,6 +14,6 @@
   justify-content: center;
 }
 
-.user-list__link-text {
+.user-menu__text {
   display: none;
 }

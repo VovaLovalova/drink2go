@@ -100,7 +100,7 @@
   </svg>
 
   <header class="header">
-    <div class="header__logo-wrapper">
+    <!-- <div class="header__logo-wrapper">
       <a class="header__logo" href="./index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -156,8 +156,61 @@
 
     <button class="main-nav__toggle" type="button">
       <span class="visually-hidden">Открыть.</span>
-    </button>
+    </button> -->
 
+    <div class="header__wrapper">
+      <a class="header__logo" href="./index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="header__logo-image" src="img/logo.svg" width="32" height="36" alt="logo Drink2Go.">
+        </picture>
+      </a>
+      <p class="header__logo-text">Интернет-магазин<br>кофейных напитков</p>
+    </div>
+
+    <nav class="header__nav navigation">
+      <ul class="navigation__list navigation__list--close navigation__list--nojs">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            Каталог
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            Доставка
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">
+            О нас
+          </a>
+        </li>
+      </ul>
+      <button class="navigation__toggle navigation__toggle--open navigation__toggle--nojs" type="button">
+        <span class="visually-hidden">Открыть.</span>
+      </button>
+    </nav>
+
+    <div class="header__user-memu user-menu">
+      <a class="user-menu__link" href="#">
+        <svg class="user-menu__image" width="16" height="16">
+          <use href="#user"></use>
+        </svg>
+        <span class="user-menu__text">Войти</span>
+      </a>
+      <a class="user-menu__link" href="#">
+        <svg class="user-menu__image" width="16" height="16">
+          <use href="#basket"></use>
+        </svg>
+        <span class="user-menu__text">Корзина</span>
+      </a>
+    </div>
   </header>
 
   <main class="main">
