@@ -9,6 +9,10 @@
   border: none;
 }
 
+.navigation__toggle:hover {
+  background-color: #F0EBFF;
+}
+
 .navigation__toggle--open {
   &::after {
     content: "";
@@ -77,6 +81,10 @@
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #F0EBFF;
+}
+
+.navigation__item:hover {
+  background-color: #F0EBFF;
 }
 
 .navigation__item:first-child {

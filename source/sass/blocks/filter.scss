@@ -27,11 +27,11 @@
   color: #333333;
 }
 
-.filter__milk-input:disabled + .filter__milk-label {
+.filter__milk-input:disabled+.filter__milk-label {
   color: #BDBDBD;
 }
 
-.filter__country-input:disabled + .filter__country-label {
+.filter__country-input:disabled+.filter__country-label {
   color: #BDBDBD;
 }
 
@@ -50,6 +50,22 @@
   color: #333333;
 }
 
+.filter__price-value::-webkit-outer-spin-button,
+.filter__price-value::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.filter__price-value:focus {
+  outline: 2px solid #593CAC;
+}
+
+.filter__price-value:disabled {
+  background-color: #F8F8F8;
+  border: 2px solid #E2E2E2;
+  color: #BDBDBD;
+}
+
 .filter__price-value--start {
   margin-right: 44px;
   position: relative;
@@ -57,6 +73,7 @@
 
 .filter__price {
   position: relative;
+  margin-bottom: 24px;
 }
 
 .filter__price::after {
@@ -116,9 +133,11 @@
   background: #F8F8F8;
 }
 
-.filter__price {
-  margin-bottom: 24px;
+.filter__sorting-select:hover {
+  background: #F0EBFF;
 }
+
+
 
 .filter__milk {
   margin-bottom: 22px;
@@ -159,11 +178,11 @@
   background-color: #ffffff;
 }
 
-.filter__milk-input:checked + .filter__milk-label::before {
+.filter__milk-input:checked+.filter__milk-label::before {
   border: 2px solid #7859CF;
 }
 
-.filter__milk-input:checked + .filter__milk-label::after {
+.filter__milk-input:checked+.filter__milk-label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -196,7 +215,7 @@
   background-color: #BDBDBD;
 }
 
-.filter__country-label::after{
+.filter__country-label::after {
   content: "";
   position: absolute;
   top: 0;
@@ -207,13 +226,15 @@
   background-color: #FFFFFF;
 }
 
-.filter__country-input:checked + .filter__country-label::before {
+.filter__country-input:checked+.filter__country-label::before {
   background-color: #7859CF;
 }
 
-.filter__country-input:checked + .filter__country-label::after {
+.filter__country-input:checked+.filter__country-label::after {
   left: -34px;
 }
+
+
 
 // Кастомизируем слайдер
 .filter__price-slider {

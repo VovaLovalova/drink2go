@@ -21,6 +21,30 @@
   cursor: pointer;
 }
 
+.pagination-list__button-image {
+  fill: #7859CF;
+}
+
+.button-prime:hover .pagination-list__button-image {
+  fill: #ffffff;
+}
+
+.button-prime:focus .pagination-list__button-image {
+  fill: #ffffff;
+}
+
+.button-prime:active .pagination-list__button-image {
+  fill: #ffffff;
+}
+
+.button-prime:disabled .pagination-list__button-image {
+  fill: #ffffff;
+}
+
+.pagination-list__button-image--next {
+  transform: rotate(180deg);
+}
+
 .pagination-list__button--current {
   background-color: #F8F8F8;
   font-weight: 600;
@@ -29,8 +53,4 @@
   text-align: center;
   color: #333333;
   cursor: auto;
-}
-
-.pagination-list__button-image--next {
-  transform: rotate(180deg);
 }
