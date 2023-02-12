@@ -79,8 +79,7 @@
         clip-rule="evenodd" />
     </symbol>
     <symbol viewBox="0 0 6 10" id="arrow">
-      <path fill-rule="evenodd" d="M4.808 0 6 1.239 2.383 5 6 8.761 4.808 10 0 5l4.808-5Z"
-        clip-rule="evenodd" />
+      <path fill-rule="evenodd" d="M4.808 0 6 1.239 2.383 5 6 8.761 4.808 10 0 5l4.808-5Z" clip-rule="evenodd" />
     </symbol>
     <symbol viewBox="0 0 20 16" id="addbasket">
       <path fill="#fff" fill-rule="evenodd"
@@ -100,7 +99,7 @@
   </svg>
 
   <header class="header">
-     <div class="header__wrapper">
+    <div class="header__wrapper">
       <a class="header__logo" href="./index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -313,9 +312,18 @@
 
           <section class="filter__price">
             <h3 class="filter__price-title">Цена</h3>
-            <div class="filter__price-slider" id="slider"></div>
+            <div class="filter__price-slider slider">
+              <div class="slider__wrapper">
+                <div class="slider__scale">
+                  <div class="slider__bar"></div>
+                </div>
+                <div class="slider__range-toggle slider__range-toggle--min"></div>
+                <div class="slider__range-toggle slider__range-toggle--max"></div>
+              </div>
+            </div>
             <div class="filter__price-field">
-              <input class="filter__price-value filter__price-value--start" type="number" placeholder="0" min="0" max="1000">
+              <input class="filter__price-value filter__price-value--start" type="number" placeholder="0" min="0"
+                max="1000">
               <input class="filter__price-value filter__price-value--end" type="number" value="900" min="0" max="1000">
             </div>
           </section>

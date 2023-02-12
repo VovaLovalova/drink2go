@@ -1,0 +1,36 @@
+.slider__wrapper {
+  position: relative;
+}
+
+.slider__scale {
+  width: 280px;
+  height: 2px;
+  background-color: #E2E2E2;
+  display: flex;
+  align-items: center;
+}
+
+.slider__bar {
+  width: 86%;
+  height: 4px;
+  background-color: #9070EC;
+}
+
+.slider__range-toggle {
+  position: absolute;
+  top: -12px;
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border: 2px solid #9070EC;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__range-toggle--min {
+  left: 0;
+}
+
+.slider__range-toggle--max {
+  left: 80%;
+}
