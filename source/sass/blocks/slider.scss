@@ -34,3 +34,52 @@
 .slider__range-toggle--max {
   left: 80%;
 }
+
+.slider__range-toggle::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+.slider__range-toggle:active {
+  outline: none;
+}
+
+.slider__range-toggle:focus {
+  outline: none;
+}
+
+.slider__range-toggle:hover::after {
+  background-color:rgba(120, 89, 207, 0.25);
+}
+
+.slider__range-toggle:focus::after {
+  background-color:rgba(120, 89, 207, 0.25);
+}
+
+.slider__range-toggle:active::after {
+  background-color: #7859CF;
+}
+
+.slider--disabled .slider__bar {
+  background-color: #BDBDBD;
+}
+
+.slider--disabled .slider__range-toggle {
+  background-color: #F8F8F8;
+  border: 2px solid #BDBDBD;
+  cursor: default;
+}
+
+.slider--disabled .slider__bar {
+  background-color: #BDBDBD;
+}
+
+.slider--disabled .slider__range-toggle:hover::after,.slider--disabled .slider__range-toggle:focus::after,.slider--disabled .slider__range-toggle:active::after  {
+  background-color: #F8F8F8;
+}

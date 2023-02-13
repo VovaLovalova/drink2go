@@ -2,6 +2,11 @@
   margin-bottom: 20px;
 }
 
+.filter__price-slider {
+  width: 280px;
+  height: 24px;
+}
+
 .filter__price-title,
 .filter__milk-title,
 .filter__country-title {
@@ -178,11 +183,7 @@
   background-color: #ffffff;
 }
 
-.filter__milk-input:checked+.filter__milk-label::before {
-  border: 2px solid #7859CF;
-}
-
-.filter__milk-input:checked+.filter__milk-label::after {
+.filter__milk-label::after {
   content: "";
   position: absolute;
   top: 2px;
@@ -190,7 +191,49 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.filter__milk-input:checked+.filter__milk-label::before {
+  border: 2px solid #7859CF;
+}
+
+.filter__milk-input:checked+.filter__milk-label::after {
   background-color: #7859CF;
+}
+
+.filter__milk-label:hover::before {
+  border: 2px solid #9070EC;
+}
+
+.filter__milk-label:hover::after {
+  background-color:  rgba(120, 89, 207, 0.25);
+}
+
+.filter__milk-label:focus::before {
+  border: 2px solid #9070EC;
+}
+
+.filter__milk-label:focus::after {
+  background-color:  rgba(120, 89, 207, 0.25);
+}
+
+.filter__milk-input:disabled+.filter__milk-label::before {
+  border: 2px solid #E2E2E2;
+  background-color: #F8F8F8;
+}
+
+.filter__milk-input:disabled+.filter__milk-label::after {
+  background-color: #F8F8F8;
+}
+
+.filter__milk-input:disabled:checked+.filter__milk-label::before {
+  border: 2px solid #E2E2E2;
+  background-color: #F8F8F8;
+}
+
+.filter__milk-input:disabled:checked+.filter__milk-label::after {
+  background-color: #E2E2E2;
 }
 
 // Кастомизируем инпуты-чекбоксы
@@ -234,10 +277,29 @@
   left: -34px;
 }
 
+.filter__country-label:hover::before {
+  background-color:  rgba(120, 89, 207, 0.25);
+  border: 2px solid #9070EC;
+}
 
+.filter__country-label:focus::before {
+  background-color:  rgba(120, 89, 207, 0.25);
+  border: 2px solid #9070EC;
+}
 
-// Кастомизируем слайдер
-.filter__price-slider {
-  width: 280px;
-  height: 24px;
+.filter__country-input:disabled+.filter__country-label::before {
+  background-color: #E2E2E2;
+  border: none;
+}
+
+.filter__country-input:disabled+.filter__country-label::after {
+  background-color: #F8F8F8;
+}
+
+.filter__country-input:disabled:checked+.filter__country-label::before {
+  border: none;
+}
+
+.filter__country-input:disabled:checked+.filter__country-label::after {
+  background-color: #BDBDBD;
 }
