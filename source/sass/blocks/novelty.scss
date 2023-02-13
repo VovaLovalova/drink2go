@@ -1,8 +1,19 @@
 .novelty {
-  background-color: #F3EBE1;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.novelty-item--white {
+  background-color: #F3EBE1;
+}
+
+.novelty-item--latte {
+  background-color: #EAE6FC;
+}
+
+.novelty-item--espresso {
+  background-color: #E5E6E8;
 }
 
 .novelty__wrapper {

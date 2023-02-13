@@ -102,3 +102,43 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .navigation__list {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 169px;
+  }
+
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__link {
+    width: auto;
+    padding: 32px 20px;
+    white-space: nowrap;
+  }
+
+  .navigation__item {
+    border: none;
+  }
+
+  .navigation__item:first-child {
+    border: none;
+  }
+
+  .navigation__link--current {
+    color: #7859CF;
+    border-bottom: 2px solid #7859CF;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .navigation__list {
+      left: 518px;
+  }
+
+}

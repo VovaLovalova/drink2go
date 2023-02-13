@@ -21,3 +21,41 @@
 .user-menu__text {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .user-menu {
+    left: 628px;
+  }
+
+  .user-menu__link {
+    height: 80px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .user-menu {
+    left: 1139px;
+  }
+
+  .user-menu__text {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .user-menu__link {
+    width: auto;
+    height: 80px;
+    margin-right: 20px;
+    padding: 32px 20px;
+  }
+
+  .user-menu__image {
+    margin-right: 8px;
+  }
+}

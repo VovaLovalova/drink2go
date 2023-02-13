@@ -21,6 +21,17 @@
 
 @media (min-width: $tablet-width) {
 
+  .header {
+    width: $tablet-width;
+    margin-bottom: 2px;
+  }
+
+  .header__wrapper {
+    width: $tablet-width;
+    height: 80px;
+    padding: 22px 20px;
+  }
+
   .header__logo-image {
     width: 82px;
     height: 36px;
@@ -32,6 +43,21 @@
 }
 
 @media (min-width: $desktop-width) {
+
+  .header {
+    width: $desktop-width;
+  }
+
+  .header__wrapper {
+    width: $desktop-width;
+    padding: 22px 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin-right: 20px;
+  }
 
   .header__logo-image {
     width: 170px;
