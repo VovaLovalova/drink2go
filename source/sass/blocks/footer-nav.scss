@@ -48,3 +48,29 @@
 .footer-nav__link:active {
   color: #593CAC;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .footer-nav__site,
+  .footer-nav__media {
+    width: 223px;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .footer-nav__site {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-nav__site,
+  .footer-nav__media {
+    width: 317px;
+  }
+}
