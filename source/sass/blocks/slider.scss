@@ -1,4 +1,5 @@
 .slider__wrapper {
+  width: 280px;
   position: relative;
 }
 
@@ -82,4 +83,25 @@
 
 .slider--disabled .slider__range-toggle:hover::after,.slider--disabled .slider__range-toggle:focus::after,.slider--disabled .slider__range-toggle:active::after  {
   background-color: #F8F8F8;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__wrapper {
+    width: 220px;
+  }
+
+  .slider__scale {
+    width: 220px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__wrapper {
+    width: 318px;
+  }
+
+  .slider__scale {
+    width: 318px;
+  }
+
 }

@@ -54,3 +54,30 @@
   color: #333333;
   cursor: auto;
 }
+
+@media (max-width: $mobile-width) {
+  .pagination-list__button-text {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pagination-list {
+    justify-content: flex-end;
+  }
+
+  .pagination-list__button-image {
+    display: none;
+  }
+
+  .pagination-list__button--next, .pagination-list__button--previous {
+    width: auto;
+    padding: 8px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+
+}
+
