@@ -554,7 +554,7 @@
             <ul class="catalog__pagination pagination-list">
               <li class="pagination-list__item">
                 <button class="pagination-list__button button-prime pagination-list__button--previous">
-                  <p class="pagination-list__button-text">Назад</p>
+                  <span class="pagination-list__button-text">Назад</span>
                   <svg class="pagination-list__button-image" width="6" height="10">
                     <use href="#arrow"></use>
                   </svg>
@@ -571,7 +571,7 @@
               </li>
               <li class="pagination-list__item">
                 <button class="pagination-list__button button-prime pagination-list__button--next">
-                  <p class="pagination-list__button-text">Вперёд</p>
+                  <span class="pagination-list__button-text">Вперёд</span>
                   <svg class="pagination-list__button-image pagination-list__button-image--next" width="6" height="10">
                     <use href="#arrow"></use>
                   </svg>
@@ -587,6 +587,7 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <section class="footer__map map">
+        <h3 class="visually-hidden">Карта</h3>
         <div class="map__container" id="map"></div>
       </section>
       <div class="footer__main-container">
@@ -625,7 +626,6 @@
               </a>
             </li>
           </ul>
-          </a>
         </section>
         <div class="footer__nav-container">
           <section class="footer__nav footer-nav">
@@ -682,11 +682,12 @@
         </div>
       </div>
       <section class="footer__copyright copyright">
+        <h3 class="visually-hidden">Информация о разработчике</h3>
         <div class="copyright__wrapper">
           <span class="copyright__text">Разработано в</span>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
             <span class="copyright__link-text">HTML Academy</span>
-            <svg class="contacts__link-image" width="12" height="16">
+            <svg class="copyright__link-image" width="12" height="16">
               <use href="#academy"></use>
             </svg>
           </a>

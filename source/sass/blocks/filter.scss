@@ -26,7 +26,6 @@
   font-size: 16px;
   line-height: 24px;
   color: #333333;
-  margin-right: 18px;
 }
 
 .filter__milk-label,
@@ -355,6 +354,10 @@
 
   .filter__sorting {
     justify-content: flex-end;
+  }
+
+  .filter__sorting-title {
+    margin-right: 20px;
   }
 }
 

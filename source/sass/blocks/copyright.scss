@@ -31,7 +31,7 @@
   margin-right: 4px;
 }
 
-.contacts__link-image {
+.copyright__link-image {
   fill: #BDBDBD;
 }
 
@@ -47,14 +47,14 @@
   color: #593CAC;
 }
 
-.copyright__link:hover .contacts__link-image {
+.copyright__link:hover .copyright__link-image {
   fill: #7859CF;
 }
 
-.copyright__link:focus .contacts__link-image {
+.copyright__link:focus .copyright__link-image {
   fill: #7859CF;
 }
 
-.copyright__link:active .contacts__link-image {
+.copyright__link:active .copyright__link-image {
   fill: #593CAC;
 }
