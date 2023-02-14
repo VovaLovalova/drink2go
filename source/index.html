@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Drink2Go</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Drink2Go</title>
 </head>
 
 <body class="body">
@@ -192,6 +189,7 @@
                   </div>
                   <a class="novelty-item__button button-prime" href="#">Заказать</a>
                 </div>
+                <div class="novelty-item__decore"></div>
               </div>
             </div>
             <div class="swiper-slide">
@@ -220,10 +218,13 @@
                   </picture>
                 </a>
                 <div class="novelty-item__order">
-                  <span class="novelty-item__old-price">285₽</span>
-                  <span class="novelty-item__new-price">265₽</span>
+                  <div class="novelty-item__price">
+                    <span class="novelty-item__old-price">285₽</span>
+                    <span class="novelty-item__new-price">265₽</span>
+                  </div>
                   <a class="novelty-item__button button-prime" href="#">Заказать</a>
                 </div>
+                <div class="novelty-item__decore"></div>
               </div>
             </div>
             <div class="swiper-slide">
@@ -252,10 +253,13 @@
                   </picture>
                 </a>
                 <div class="novelty-item__order">
-                  <span class="novelty-item__old-price">395₽</span>
-                  <span class="novelty-item__new-price">375₽</span>
+                  <div class="novelty-item__price">
+                    <span class="novelty-item__old-price">395₽</span>
+                    <span class="novelty-item__new-price">375₽</span>
+                  </div>
                   <a class="novelty-item__button button-prime" href="#">Заказать</a>
                 </div>
+                <div class="novelty-item__decore"></div>
               </div>
             </div>
           </div>
@@ -264,6 +268,7 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
+
     </section>
     <section class="main__item advantages">
       <div class="advantages__wrapper">
@@ -308,7 +313,7 @@
         <h2 class="catalog__title">Каталог</h2>
         <p class="catalog__description">Каталог кофейных напитков</p>
         <div class="catalog__container">
-          <form class="catalog__filter filter">
+          <form class="catalog__filter filter" action="https://echo.htmlacademy.ru">
             <div class="filter__container">
               <section class="filter__price">
                 <h3 class="filter__price-title">Цена</h3>
@@ -389,8 +394,8 @@
               </section>
             </div>
             <div class="filter__buttons">
-              <button class="filter__buttons-apply button-prime">Применить фильтр</button>
-              <button class="filter__buttons-reset button-second">Сбросить фильтр</button>
+              <button class="filter__buttons-apply button-prime" type="button">Применить фильтр</button>
+              <button class="filter__buttons-reset button-second" type="button">Сбросить фильтр</button>
             </div>
 
             <div class="filter__sorting">
@@ -671,12 +676,12 @@
                 </svg>
                 <span class="contacts__address-text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
               </div>
-              <div class="contacts__phone">
+              <a class="contacts__phone" href="tel:+79999999999">
                 <svg class="contacts__phone-image" width="13" height="16">
                   <use href="#phone"></use>
                 </svg>
                 <span class="contacts__phone-text">+7 (999) 999-99-99</span>
-              </div>
+              </a>
             </address>
           </section>
         </div>
@@ -696,6 +701,9 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/script.js" defer></script>
 </body>
 

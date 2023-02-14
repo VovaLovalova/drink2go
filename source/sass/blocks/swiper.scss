@@ -28,3 +28,8 @@
 .swiper-pagination-bullet:hover {
   background: var(--swiper-pagination-bullet-inactive-color,rgba(120, 89, 207, 0.25));
 }
+
+
+.swiper-horizontal>.swiper-pagination-bullets {
+  bottom: 70px;
+}

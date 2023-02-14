@@ -4,19 +4,20 @@
   align-items: center;
 }
 
-.novelty-item--white {
-  background-color: #F3EBE1;
-}
-
-.novelty-item--latte {
-  background-color: #EAE6FC;
-}
-
-.novelty-item--espresso {
-  background-color: #E5E6E8;
-}
-
 .novelty__wrapper {
   width: 320px;
   height: 656px;
+}
+
+@media (min-width: $tablet-width) {
+  .novelty__wrapper {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .novelty__wrapper {
+    width: 1440px;
+    height: 714px;
+  }
 }
