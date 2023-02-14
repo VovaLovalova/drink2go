@@ -5,6 +5,7 @@
 .filter__price-slider {
   width: 280px;
   height: 24px;
+  margin-bottom: 14px;
 }
 
 .filter__price-title,
@@ -18,7 +19,7 @@
 }
 
 .filter__price-title {
-  margin-bottom: 32px;
+  margin-bottom: 34px;
 }
 
 .filter__sorting-title {
@@ -88,8 +89,8 @@
 .filter__price::after {
   content: "";
   position: absolute;
-  top: 88px;
-  left: 134px;
+  top: 114px;
+  left: 136px;
   width: 9px;
   height: 2px;
   background-color: #BDBDBD;
@@ -112,6 +113,7 @@
   background: #7859CF;
   color: #FFFFFF;
   margin-bottom: 25px;
+  letter-spacing: -0.04em;
 }
 
 .filter__buttons-reset {
@@ -123,13 +125,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .filter__sorting {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  margin-left: 4px;
+}
+
+.filter__sorting-title {
+  margin-right: 14px;
 }
 
 .filter__sorting-select {
@@ -140,6 +146,7 @@
   color: #7859CF;
   border: none;
   background: #F8F8F8;
+  letter-spacing: 0.06em;
 }
 
 .filter__sorting-select:hover {
@@ -151,7 +158,7 @@
 }
 
 .filter__country {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .filter__milk-item:not(:last-child) {
@@ -161,8 +168,6 @@
 .filter__country-item:not(:last-child) {
   margin-bottom: 20px;
 }
-
-// Кастомизируем инпуты-радиокнопки
 
 .filter__milk-input {
   display: none;
@@ -237,8 +242,6 @@
 .filter__milk-input:disabled:checked+.filter__milk-label::after {
   background-color: #E2E2E2;
 }
-
-// Кастомизируем инпуты-чекбоксы
 
 .filter__country-input {
   display: none;

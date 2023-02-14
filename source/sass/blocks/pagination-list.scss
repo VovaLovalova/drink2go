@@ -55,10 +55,8 @@
   cursor: auto;
 }
 
-@media (max-width: $mobile-width) {
-  .pagination-list__button-text {
-    display: none;
-  }
+.pagination-list__button-text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

@@ -13,6 +13,11 @@
   color: #7859CF;
 }
 
+:root {
+  --swiper-navigation-size: 1px;
+}
+
+
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,62px));
   height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,4px));

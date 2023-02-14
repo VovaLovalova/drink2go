@@ -7,7 +7,8 @@
 }
 
 .social__logo {
-  margin-right: 47px;
+  width: 84px;
+  margin-right: 36px;
 }
 
 .social__list {
@@ -45,10 +46,8 @@
   background-color: rgba(120, 89, 207, 0.25);
 }
 
-@media (max-width: $mobile-width) {
-  .social__logo-text {
-    display: none;
-  }
+.social__logo-text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

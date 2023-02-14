@@ -13,10 +13,8 @@
   text-align: start;
 }
 
-@media (max-width: $mobile-width) {
-  .header__logo-text {
-    display: none;
-  }
+.header__logo-text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
