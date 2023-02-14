@@ -1,7 +1,7 @@
 .map__container {
   width: 320px;
   height: 420px;
-  background-image: url(..//..//img/map/map-mobile.jpg);
+  background-image: url("..//..//img/map/map-mobile.jpg");
 }
 
 
@@ -9,7 +9,7 @@
   .map__container {
     width: $tablet-width;
     height: 480px;
-    background-image: url(..//..//img/map/map-tablet.jpg);
+    background-image: url("..//..//img/map/map-tablet.jpg");
   }
 }
 
@@ -17,6 +17,6 @@
   .map__container {
     width: $desktop-width;
     height: 540px;
-    background-image: url(..//..//img/map/map-desktop.jpg);
+    background-image: url("..//..//img/map/map-desktop.jpg");
   }
 }

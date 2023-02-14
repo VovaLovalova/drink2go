@@ -1,5 +1,5 @@
 .catalog {
-  background: #F8F8F8;
+  background: #f8f8f8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
-  color: #7859CF;
+  color: #7859cf;
   margin-bottom: 4px;
 }
 
@@ -52,7 +52,6 @@
     row-gap: 30px;
     margin-bottom: 70px;
   }
-
 }
 
 @media (min-width: $desktop-width) {

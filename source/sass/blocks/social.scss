@@ -2,7 +2,7 @@
   height: 80px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F0EBFF;
+  border-bottom: 1px solid #f0ebff;
   padding: 22px 20px;
 }
 
@@ -27,19 +27,19 @@
   height: 40px;
   background-color: #ffffff;
   border-radius: 4px;
-  fill: #BDBDBD;
+  fill: #bdbdbd;
 }
 
 .social__link:hover {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .social__link:hover .social__link-image {
-  fill: #7859CF;
+  fill: #7859cf;
 }
 
 .social__link:focus {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .social__link:active {

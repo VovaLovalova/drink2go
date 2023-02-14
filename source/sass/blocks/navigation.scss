@@ -1,7 +1,7 @@
 .navigation__toggle {
   width: 60px;
   height: 60px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -10,7 +10,7 @@
 }
 
 .navigation__toggle:hover {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .navigation__toggle--open {
@@ -21,8 +21,8 @@
     left: 22px;
     width: 16px;
     height: 1.5px;
-    background-color: #000;
-    box-shadow: 0 4px #000, 0 8px #000;
+    background-color: #000000;
+    box-shadow: 0 4px #000000, 0 8px #000000;
   }
 }
 
@@ -34,7 +34,7 @@
     left: 22px;
     width: 16px;
     height: 1.5px;
-    background-color: #000;
+    background-color: #000000;
     transform: rotate(45deg);
   }
 
@@ -45,7 +45,7 @@
     left: 22px;
     width: 16px;
     height: 1.5px;
-    background-color: #000;
+    background-color: #000000;
     transform: rotate(-45deg);
   }
 }
@@ -59,7 +59,7 @@
   top: 60px;
   left: 0;
   width: 320px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   z-index: 2;
 }
 
@@ -80,15 +80,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #F0EBFF;
+  border-bottom: 1px solid #f0ebff;
 }
 
 .navigation__item:hover {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .navigation__item:first-child {
-  border-top: 1px solid #F0EBFF;
+  border-top: 1px solid #f0ebff;
 }
 
 .navigation__link {
@@ -130,18 +130,17 @@
   }
 
   .navigation__link--current {
-    color: #7859CF;
-    border-bottom: 2px solid #7859CF;
+    color: #7859cf;
+    border-bottom: 2px solid #7859cf;
   }
 }
 
 @media (min-width: $desktop-width) {
   .navigation__list {
-      left: 518px;
+    left: 518px;
   }
 
   .navigation__link {
     margin-right: 21px;
   }
-
 }

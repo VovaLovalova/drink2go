@@ -6,7 +6,7 @@
 .slider__scale {
   width: 280px;
   height: 2px;
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   display: flex;
   align-items: center;
 }
@@ -14,7 +14,7 @@
 .slider__bar {
   width: 86%;
   height: 4px;
-  background-color: #9070EC;
+  background-color: #9070ec;
 }
 
 .slider__range-toggle {
@@ -22,8 +22,8 @@
   top: -12px;
   width: 24px;
   height: 24px;
-  background-color: #FFFFFF;
-  border: 2px solid #9070EC;
+  background-color: #ffffff;
+  border: 2px solid #9070ec;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -44,7 +44,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .slider__range-toggle:active {
@@ -64,27 +64,23 @@
 }
 
 .slider__range-toggle:active::after {
-  background-color: #7859CF;
+  background-color: #7859cf;
 }
 
 .slider--disabled .slider__bar {
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
 }
 
 .slider--disabled .slider__range-toggle {
-  background-color: #F8F8F8;
-  border: 2px solid #BDBDBD;
+  background-color: #f8f8f8;
+  border: 2px solid #bdbdbd;
   cursor: default;
-}
-
-.slider--disabled .slider__bar {
-  background-color: #BDBDBD;
 }
 
 .slider--disabled .slider__range-toggle:hover::after,
 .slider--disabled .slider__range-toggle:focus::after,
 .slider--disabled .slider__range-toggle:active::after {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 }
 
 @media (min-width: $tablet-width) {

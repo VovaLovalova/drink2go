@@ -8,7 +8,7 @@
 .footer-nav__media {
   width: 320px;
   padding: 20px 20px 28px;
-  border-bottom: 1px solid #F0EBFF;
+  border-bottom: 1px solid #f0ebff;
 }
 
 .footer-nav__list {
@@ -20,7 +20,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.02em;
-  color: #7859CF;
+  color: #7859cf;
   margin-bottom: 17px;
 }
 
@@ -38,15 +38,15 @@
 }
 
 .footer-nav__link:hover {
-  color: #9070EC;
+  color: #9070ec;
 }
 
 .footer-nav__link:focus {
-  color: #9070EC;
+  color: #9070ec;
 }
 
 .footer-nav__link:active {
-  color: #593CAC;
+  color: #593cac;
 }
 
 @media (min-width: $tablet-width) {

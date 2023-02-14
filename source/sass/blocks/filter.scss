@@ -27,6 +27,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #333333;
+  margin-right: 14px;
 }
 
 .filter__milk-label,
@@ -37,12 +38,12 @@
   color: #333333;
 }
 
-.filter__milk-input:disabled+.filter__milk-label {
-  color: #BDBDBD;
+.filter__milk-input:disabled + .filter__milk-label {
+  color: #bdbdbd;
 }
 
-.filter__country-input:disabled+.filter__country-label {
-  color: #BDBDBD;
+.filter__country-input:disabled + .filter__country-label {
+  color: #bdbdbd;
 }
 
 .filter__price-value {
@@ -52,8 +53,8 @@
   border-radius: 4px;
   padding: 8px 10px;
   text-align: center;
-  background: #FFFFFF;
-  border: 2px solid #9070EC;
+  background: #ffffff;
+  border: 2px solid #9070ec;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -62,18 +63,18 @@
 
 .filter__price-value::-webkit-outer-spin-button,
 .filter__price-value::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
 .filter__price-value:focus {
-  outline: 2px solid #593CAC;
+  outline: 2px solid #593cac;
 }
 
 .filter__price-value:disabled {
-  background-color: #F8F8F8;
-  border: 2px solid #E2E2E2;
-  color: #BDBDBD;
+  background-color: #f8f8f8;
+  border: 2px solid #e2e2e2;
+  color: #bdbdbd;
 }
 
 .filter__price-value--start {
@@ -93,7 +94,7 @@
   left: 136px;
   width: 9px;
   height: 2px;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
 }
 
 .filter__buttons-apply,
@@ -110,15 +111,15 @@
 }
 
 .filter__buttons-apply {
-  background: #7859CF;
-  color: #FFFFFF;
+  background: #7859cf;
+  color: #ffffff;
   margin-bottom: 25px;
   letter-spacing: -0.04em;
 }
 
 .filter__buttons-reset {
-  background: #FFFFFF;
-  color: #7859CF;
+  background: #ffffff;
+  color: #7859cf;
 }
 
 .filter__buttons {
@@ -134,23 +135,19 @@
   margin-left: 4px;
 }
 
-.filter__sorting-title {
-  margin-right: 14px;
-}
-
 .filter__sorting-select {
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   text-align: right;
-  color: #7859CF;
+  color: #7859cf;
   border: none;
-  background: #F8F8F8;
+  background: #f8f8f8;
   letter-spacing: 0.06em;
 }
 
 .filter__sorting-select:hover {
-  background: #F0EBFF;
+  background: #f0ebff;
 }
 
 .filter__milk {
@@ -186,7 +183,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 2px solid #BDBDBD;
+  border: 2px solid #bdbdbd;
   background-color: #ffffff;
 }
 
@@ -201,16 +198,16 @@
   background-color: #ffffff;
 }
 
-.filter__milk-input:checked+.filter__milk-label::before {
-  border: 2px solid #7859CF;
+.filter__milk-input:checked + .filter__milk-label::before {
+  border: 2px solid #7859cf;
 }
 
-.filter__milk-input:checked+.filter__milk-label::after {
-  background-color: #7859CF;
+.filter__milk-input:checked + .filter__milk-label::after {
+  background-color: #7859cf;
 }
 
 .filter__milk-label:hover::before {
-  border: 2px solid #9070EC;
+  border: 2px solid #9070ec;
 }
 
 .filter__milk-label:hover::after {
@@ -218,29 +215,29 @@
 }
 
 .filter__milk-label:focus::before {
-  border: 2px solid #9070EC;
+  border: 2px solid #9070ec;
 }
 
 .filter__milk-label:focus::after {
   background-color: rgba(120, 89, 207, 0.25);
 }
 
-.filter__milk-input:disabled+.filter__milk-label::before {
-  border: 2px solid #E2E2E2;
-  background-color: #F8F8F8;
+.filter__milk-input:disabled + .filter__milk-label::before {
+  border: 2px solid #e2e2e2;
+  background-color: #f8f8f8;
 }
 
-.filter__milk-input:disabled+.filter__milk-label::after {
-  background-color: #F8F8F8;
+.filter__milk-input:disabled + .filter__milk-label::after {
+  background-color: #f8f8f8;
 }
 
-.filter__milk-input:disabled:checked+.filter__milk-label::before {
-  border: 2px solid #E2E2E2;
-  background-color: #F8F8F8;
+.filter__milk-input:disabled:checked + .filter__milk-label::before {
+  border: 2px solid #e2e2e2;
+  background-color: #f8f8f8;
 }
 
-.filter__milk-input:disabled:checked+.filter__milk-label::after {
-  background-color: #E2E2E2;
+.filter__milk-input:disabled:checked + .filter__milk-label::after {
+  background-color: #e2e2e2;
 }
 
 .filter__country-input {
@@ -260,7 +257,7 @@
   width: 42px;
   height: 24px;
   border-radius: 12px;
-  background-color: #BDBDBD;
+  background-color: #bdbdbd;
 }
 
 .filter__country-label::after {
@@ -271,42 +268,42 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.filter__country-input:checked+.filter__country-label::before {
-  background-color: #7859CF;
+.filter__country-input:checked + .filter__country-label::before {
+  background-color: #7859cf;
 }
 
-.filter__country-input:checked+.filter__country-label::after {
+.filter__country-input:checked + .filter__country-label::after {
   left: -34px;
 }
 
 .filter__country-label:hover::before {
   background-color: rgba(120, 89, 207, 0.25);
-  border: 2px solid #9070EC;
+  border: 2px solid #9070ec;
 }
 
 .filter__country-label:focus::before {
   background-color: rgba(120, 89, 207, 0.25);
-  border: 2px solid #9070EC;
+  border: 2px solid #9070ec;
 }
 
-.filter__country-input:disabled+.filter__country-label::before {
-  background-color: #E2E2E2;
+.filter__country-input:disabled + .filter__country-label::before {
+  background-color: #e2e2e2;
   border: none;
 }
 
-.filter__country-input:disabled+.filter__country-label::after {
-  background-color: #F8F8F8;
+.filter__country-input:disabled + .filter__country-label::after {
+  background-color: #f8f8f8;
 }
 
-.filter__country-input:disabled:checked+.filter__country-label::before {
+.filter__country-input:disabled:checked + .filter__country-label::before {
   border: none;
 }
 
-.filter__country-input:disabled:checked+.filter__country-label::after {
-  background-color: #BDBDBD;
+.filter__country-input:disabled:checked + .filter__country-label::after {
+  background-color: #bdbdbd;
 }
 
 @media (min-width: $tablet-width) {

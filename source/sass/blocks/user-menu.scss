@@ -6,7 +6,6 @@
 }
 
 .user-menu__link {
-  display: block;
   width: 60px;
   height: 60px;
   display: flex;
@@ -15,7 +14,7 @@
 }
 
 .user-menu__link:hover {
-  background-color: #F0EBFF;
+  background-color: #f0ebff;
 }
 
 .user-menu__text {
@@ -30,7 +29,6 @@
   .user-menu__link {
     height: 80px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
