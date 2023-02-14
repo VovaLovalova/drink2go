@@ -52,21 +52,18 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    height: 100px;
-    padding: 42px 20px;
+    min-height: 110px;
+    padding: 51px 20px 40px;
     border-bottom: none;
   }
 
   .social__logo {
-    margin-right: 408px;
+    width: 170px;
+    margin-right: 397px;
   }
 
   .social__logo-image {
     width: 170px;
-  }
-
-  .social__logo-text {
-    display: none;
   }
 }
 
@@ -75,16 +72,21 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    margin-right: 30px;
+    margin-right: 54px;
+    width: 318px;
   }
 
   .social__logo {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .social__logo-text {
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
   }
 }

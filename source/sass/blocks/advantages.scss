@@ -63,7 +63,7 @@
 @media (min-width: $tablet-width) {
   .advantages__wrapper {
     width: $tablet-width;
-    padding: 248px 30px 100px;
+    padding: 230px 30px 100px;
   }
 
   .advantages__description {
@@ -91,6 +91,7 @@
     text-align: left;
     font-size: 24px;
     line-height: 36px;
+    margin-bottom: 10px;
   }
 
   .advantages__item-description {
@@ -100,8 +101,8 @@
   }
 
   .advantages__item-image {
-    top: 0;
-    left: -72px;
+    top: 4px;
+    left: -70px;
   }
 }
 
@@ -116,7 +117,8 @@
   }
 
   .advantages__list {
-    display: flex;
+    grid-template-columns: 318px 318px 318px 318px;
+    column-gap: 30px;
   }
 
   .advantages__item {

@@ -136,9 +136,12 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .navigation__list {
       left: 518px;
+  }
+
+  .navigation__link {
+    margin-right: 21px;
   }
 
 }

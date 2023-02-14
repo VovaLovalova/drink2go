@@ -54,6 +54,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    margin-right: 29px;
   }
 
   .footer-nav__site,
@@ -72,5 +73,13 @@
   .footer-nav__site,
   .footer-nav__media {
     width: 317px;
+  }
+
+  .footer-nav {
+    margin-right: 32px;
+  }
+
+  .footer-nav__title {
+    margin-top: 9px;
   }
 }

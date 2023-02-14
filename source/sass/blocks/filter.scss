@@ -311,17 +311,30 @@
 
 @media (min-width: $tablet-width) {
   .filter {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .filter__container {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .filter__price {
+    width: 230px;
+    margin-right: 18px;
+  }
+
+  .filter__price-title {
+    margin-bottom: 31px;
+  }
+
+  .filter__price-slider {
     width: 220px;
-    margin-right: 22px;
+    margin-bottom: 11px;
+  }
+
+  .filter__price-field {
+    margin-left: 8px;
   }
 
   .filter__price-value {
@@ -330,37 +343,58 @@
   }
 
   .filter__price-value--start {
-    margin-right: 35px;
+    margin-right: 33px;
   }
 
   .filter__price::after {
-    left: 106px;
+    left: 112px;
+    top: 109px;
   }
 
   .filter__milk {
     margin-bottom: 0;
-    margin-right: 39px;
+    margin-right: 38px;
+  }
+
+  .filter__country {
+    margin-bottom: 0;
+  }
+
+  .filter__country-title,
+  .filter__milk-title {
+    margin-bottom: 20px;
+  }
+
+  .filter__milk-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .filter__buttons {
     flex-direction: row;
     width: 340px;
-    margin: 0 auto;
+    margin: 0 180px 41px;
     text-align: center;
-    margin-bottom: 44px;
   }
 
   .filter__buttons-apply {
     margin-bottom: 0;
     margin-right: 30px;
+    height: 40px;
+    width: 147px;
+    letter-spacing: 0;
+  }
+
+  .filter__buttons-reset {
+    width: 138px;
   }
 
   .filter__sorting {
     justify-content: flex-end;
+    margin-right: 10px;
   }
 
   .filter__sorting-title {
-    margin-right: 20px;
+    margin-right: 18px;
   }
 }
 
@@ -373,7 +407,7 @@
 
   .filter__container {
     flex-direction: column;
-    margin-bottom: 0;
+    margin-bottom: 37px;
     width: 318px;
   }
 
@@ -385,10 +419,15 @@
   .filter__price {
     width: 318px;
     margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .filter__price-field {
+    margin-left: 0;
   }
 
   .filter__price-title {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
   }
 
   .filter__price-value {
@@ -401,22 +440,31 @@
   }
 
   .filter__price::after {
-    left: 154px;
-    top: 98px
+    left: 155px;
+    top: 108px;
   }
 
   .filter__buttons {
     width: 318px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .filter__buttons-apply {
+    width: 151px;
     margin-right: 18px;
+  }
+
+  .filter__buttons-reset {
+    width: 151px;
   }
 
   .filter__sorting {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -3px;
+  }
+
+  .filter__price-slider {
+    width: 318px;
   }
 }

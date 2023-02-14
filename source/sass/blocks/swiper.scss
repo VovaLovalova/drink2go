@@ -2,21 +2,10 @@
   display: none;
 }
 
-@media (min-width: $desktop-width) {
-  .swiper-pagination {
-    display: block;
-  }
-}
-
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 20px;
   color: #7859CF;
 }
-
-:root {
-  --swiper-navigation-size: 1px;
-}
-
 
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,62px));
@@ -36,5 +25,31 @@
 
 
 .swiper-horizontal>.swiper-pagination-bullets {
-  bottom: 70px;
+  bottom: 69px;
+}
+
+@media (min-width: $tablet-width) {
+  .swiper-button-next, .swiper-button-prev {
+    top: 317px;
+  }
+
+  .swiper-button-next {
+    right: 25px;
+  }
+
+  .swiper-button-prev {
+    left: 25px;
+    right: auto;
+}
+}
+
+
+@media (min-width: $desktop-width) {
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    top: 355px;
+  }
 }

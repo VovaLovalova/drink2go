@@ -58,3 +58,16 @@
 .copyright__link:active .copyright__link-image {
   fill: #593CAC;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 36px 0 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    padding: 0 0 40px;
+  }
+}
+
