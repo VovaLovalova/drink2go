@@ -109,6 +109,8 @@
     display: flex;
     top: 0;
     left: 169px;
+    width: 470px;
+    flex-wrap: wrap;
   }
 
   .navigation__toggle {
@@ -138,6 +140,7 @@
 @media (min-width: $desktop-width) {
   .navigation__list {
     left: 518px;
+    width: 500px;
   }
 
   .navigation__link {

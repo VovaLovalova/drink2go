@@ -34,6 +34,8 @@
   line-height: 20px;
   color: #333333;
   margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-card__price {

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  background-color: #ffffff;
 }
 
 .header__wrapper {
@@ -11,6 +12,7 @@
   height: 60px;
   padding: 12px 20px;
   text-align: start;
+  background-color: #ffffff;
 }
 
 .header__logo-text {
@@ -46,7 +48,6 @@
 
   .header__wrapper {
     width: $desktop-width;
-    min-height: 79px;
     padding: 22px 40px;
     display: flex;
     align-items: center;

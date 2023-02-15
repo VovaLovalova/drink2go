@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <link rel="preload" href="./fonts/montserrat-regular.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-medium.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-semibold.woff2" as="font">
   <link rel="preload" href="./fonts/montserrat-bold.woff2" as="font">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
@@ -163,8 +165,10 @@
                 <a class="novelty-item__link-title" href="#">
                   <h3 class="novelty-item__title">Декаф Флэт Уайт</h3>
                 </a>
-                <p class="novelty-item__description">Свежесваренный кофе без кофеина из Эфиопии<br class="novelty-item__brake"> с натуральным фермерским
-                  молоком — то, что нужно<br class="novelty-item__brake"> для расслабления после тяжёлого рабочего дня</p>
+                <p class="novelty-item__description">Свежесваренный кофе без кофеина из Эфиопии<br
+                    class="novelty-item__brake"> с натуральным фермерским
+                  молоком — то, что нужно<br class="novelty-item__brake"> для расслабления после тяжёлого рабочего дня
+                </p>
                 <a class="novelty-item__link-image" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)"
@@ -263,8 +267,12 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev" aria-label="слайд назад"></div>
-          <div class="swiper-button-next" aria-label="слайд вперед"></div>
+          <div class="swiper-button-prev">
+            <span class="visually-hidden">Кнопка назад</span>
+          </div>
+          <div class="swiper-button-next">
+            <span class="visually-hidden">Кнопка вперёд</span>
+          </div>
         </div>
       </div>
 
@@ -321,8 +329,12 @@
                     <div class="slider__scale">
                       <div class="slider__bar"></div>
                     </div>
-                    <button class="slider__range-toggle slider__range-toggle--min" type="button" aria-label="уровень минимальной цены"></button>
-                    <button class="slider__range-toggle slider__range-toggle--max" type="button" aria-label="уровень максимальной цены"></button>
+                    <button class="slider__range-toggle slider__range-toggle--min" type="button">
+                      <span class="visually-hidden">Минимальная цена</span>
+                    </button>
+                    <button class="slider__range-toggle slider__range-toggle--max" type="button">
+                      <span class="visually-hidden">Максимальная цена</span>
+                    </button>
                   </div>
                 </div>
                 <div class="filter__price-field">
@@ -393,8 +405,8 @@
               </section>
             </div>
             <div class="filter__buttons">
-              <button class="filter__buttons-apply button-prime" type="button">Применить фильтр</button>
-              <button class="filter__buttons-reset button-second" type="button">Сбросить фильтр</button>
+              <button class="filter__buttons-apply button-prime" type="submit">Применить фильтр</button>
+              <button class="filter__buttons-reset button-second" type="reset">Сбросить фильтр</button>
             </div>
 
             <div class="filter__sorting">
@@ -600,7 +612,8 @@
           <a class="social__logo" href="./index.html">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-              <img class="social__logo-image" src="img/logo-tablet.svg" width="82" height="36" alt="Логотип компании Drink2Go.">
+              <img class="social__logo-image" src="img/logo-tablet.svg" width="82" height="36"
+                alt="Логотип компании Drink2Go.">
             </picture>
           </a>
           <p class="social__logo-text">Интернет-магазин кофейных напитков</p>

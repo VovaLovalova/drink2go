@@ -47,6 +47,8 @@
   text-align: center;
   color: #333333;
   margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .novelty-item__order {
@@ -55,7 +57,7 @@
 }
 
 .novelty-item__price {
-  margin-left: 25px;
+  margin-left: -1px;
   margin-right: 20px;
 }
 

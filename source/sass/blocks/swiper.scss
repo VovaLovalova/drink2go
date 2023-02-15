@@ -29,18 +29,54 @@
   bottom: 69px;
 }
 
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.swiper-button-prev:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
+.swiper-button-next:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
+}
+
+.swiper-button-next {
+  right: -4px;
+}
+
+.swiper-button-prev {
+  left: 0;
+  right: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  height: 656px;
+  top: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .swiper-button-next,
   .swiper-button-prev {
-    top: 317px;
+    padding-bottom: 133px;
+    top: 22px;
+    width: 80px;
+    height: 768px;
   }
 
   .swiper-button-next {
-    right: 25px;
+    right: 0;
   }
 
   .swiper-button-prev {
-    left: 25px;
+    left: 0;
     right: auto;
   }
 }
@@ -52,6 +88,7 @@
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 355px;
+    height: 714px;
+    padding-bottom: 0;
   }
 }
