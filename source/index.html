@@ -100,7 +100,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="header__logo-image" src="img/logo.svg" width="32" height="36" alt="logo Drink2Go.">
+          <img class="header__logo-image" src="img/logo.svg" width="32" height="36" alt="Логотип компании Drink2Go.">
         </picture>
       </a>
       <p class="header__logo-text">Интернет-магазин<br>кофейных напитков</p>
@@ -263,8 +263,8 @@
             </div>
           </div>
           <div class="swiper-pagination"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev" aria-label="слайд назад"></div>
+          <div class="swiper-button-next" aria-label="слайд вперед"></div>
         </div>
       </div>
 
@@ -321,15 +321,15 @@
                     <div class="slider__scale">
                       <div class="slider__bar"></div>
                     </div>
-                    <button class="slider__range-toggle slider__range-toggle--min" type="button"></button>
-                    <button class="slider__range-toggle slider__range-toggle--max" type="button"></button>
+                    <button class="slider__range-toggle slider__range-toggle--min" type="button" aria-label="уровень минимальной цены"></button>
+                    <button class="slider__range-toggle slider__range-toggle--max" type="button" aria-label="уровень максимальной цены"></button>
                   </div>
                 </div>
                 <div class="filter__price-field">
                   <input class="filter__price-value filter__price-value--start" type="number" placeholder="0" min="0"
-                    max="1000">
+                    max="1000" aria-label="уровень минимальной цены">
                   <input class="filter__price-value filter__price-value--end" type="number" value="900" min="0"
-                    max="1000">
+                    max="1000" aria-label="уровень максимальной цены">
                 </div>
               </section>
 
@@ -600,7 +600,7 @@
           <a class="social__logo" href="./index.html">
             <picture>
               <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-              <img class="social__logo-image" src="img/logo-tablet.svg" width="82" height="36" alt="logo Drink2Go.">
+              <img class="social__logo-image" src="img/logo-tablet.svg" width="82" height="36" alt="Логотип компании Drink2Go.">
             </picture>
           </a>
           <p class="social__logo-text">Интернет-магазин кофейных напитков</p>
